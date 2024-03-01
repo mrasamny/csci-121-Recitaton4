@@ -123,7 +123,7 @@ class RPS_PlayerTest {
         int p1Expected = 0;
         int p2Expected = 0;
         for(int i=0; i < 50; i++){
-            RPS_Player winner = player1.challenge(player2);
+            RPS_Player winner = player1.keepAndChallenge(player2);
             if (winner == player1){
                 p1Expected += 1;
             }else if (winner == player2){
